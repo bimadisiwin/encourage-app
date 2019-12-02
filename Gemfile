@@ -40,9 +40,8 @@ gem 'kaminari'
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'bootsnap', require: false
 
-gem 'sassc'
 gem 'bootstrap', '~> 4.0.0'
-
+gem 'webpacker', '~> 3.0'
 
 
 
