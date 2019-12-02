@@ -34,7 +34,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'kaminari'
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'bootsnap', require: false
-gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.3.1'
 gem 'webpacker', '~> 3.0'
 
 group :development, :test do
