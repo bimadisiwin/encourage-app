@@ -1,0 +1,6 @@
+- provide(:title, "新規編集")
+div.d-flex.align-items-center
+  h1 掲示板編集
+  div.ml-auto.boards__linkBox
+    = link_to '一覧', boards_path, class: 'btn btn-outline-dark'
+= render partial: 'form', locals: { board: @board }

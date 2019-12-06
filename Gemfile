@@ -32,6 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'kaminari'
+gem 'rails-i18n'
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'bootsnap', require: false
 gem 'bootstrap', '~> 4.3.1'

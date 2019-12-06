@@ -1,0 +1,11 @@
+- provide(:title, "詳細")
+div.d-flex.align-items-center.mt-4.mb-4
+  div.ml-auto.boards__linkBox
+    = link_to '一覧', boards_path, class: 'btn btn-outline-dark'
+    = link_to '編集', edit_board_path, class: 'btn btn-outline-dark'
+
+- if flash[:notice]
+  div.alert.alert-primary = flash[:notice]
+  
+  / モデルのオブジェクトの場合は、boardのパーシャルが使われ、引数のインスタンス変数は、boardというローカル変数で渡される
+= render @board
