@@ -6,6 +6,13 @@ div.d-flex.align-items-center.mt-4.mb-4
 
 - if flash[:notice]
   div.alert.alert-primary = flash[:notice]
-  
+
   / モデルのオブジェクトの場合は、boardのパーシャルが使われ、引数のインスタンス変数は、boardというローカル変数で渡される
 = render @board
+
+/.特定のモデル（@board）をrenderの引数（commentsオブジェクト）に渡した場合、自動的にモデル名のviewが使用される。commentsオブジェクトの数だけ、レンダリングされる
+div.p-comment__list
+  div.p-comment__listTitle コメント
+  = render @board.comments
+
+= render partial: 'comments/form', locals: { comment: @comment }
