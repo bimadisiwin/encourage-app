@@ -20,8 +20,8 @@
 
 FactoryBot.define do
   factory :comment do
-    board { nil }
-    name { "MyString" }
-    comment { "MyText" }
+    board_id { 1 }
+    name { "名前" }
+    comment { "コメント" }
   end
 end
