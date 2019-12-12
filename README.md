@@ -16,7 +16,7 @@
 セッション管理
 画像アップロードのライブラリ
 デプロイの方法
-
+テストはRSpec
 # README
 
 This README would normally document whatever steps are necessary to get the
