@@ -3,3 +3,9 @@
     ul
       - flash[:error_messages].each do |msg|
         li = msg
+        /ユーザー認証
+        - if flash[:notice]
+          div.alert.alert-danger = flash[:notice]
+
+        - if flash[:alert]
+          div.alert.alert-danger = flash[:alert]
