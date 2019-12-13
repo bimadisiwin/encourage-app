@@ -35,7 +35,6 @@ gem 'kaminari'
 gem 'rails-i18n'
 gem 'slim', '~> 4.0', '>= 4.0.1'
 gem 'bootsnap', require: false
-gem 'bootstrap', '~> 4.3.1'
 gem 'webpacker', '~> 3.0'
 
 group :development, :test do
